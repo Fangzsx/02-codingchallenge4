@@ -16,3 +16,13 @@ for(let i = 0; i < bills.length; i++){
 console.log(bills, tips);
 console.log(totals);
 
+console.log(calcAverage(bills));
+
+function calcAverage(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
