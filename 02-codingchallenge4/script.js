@@ -10,6 +10,11 @@ function calcTip(bill){
 for(let i = 0; i < bills.length; i++){
     tips.push(calcTip(bills[i]));
     totals.push(tips[i] + bills[i]);
+    //avoid calling computation multiple times, store result
+    //inside a variable i.e
+    //const tip = calcTip(bills[i];
+    //tips.push(tip);
+    //totals.push(tip + bills[i]);
 }
 
 
